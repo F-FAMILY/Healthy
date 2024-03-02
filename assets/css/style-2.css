@@ -96,6 +96,13 @@ img:not(.initial){transition:opacity 1s;}
 img.initial,img.loaded,img.error{opacity:1;}
 img:not([src]){visibility:hidden;}
 
+/*Hiện sẵn chữ giảm giá */
+.discount {
+    display: inline-block; /* Hiển thị dính liền với giá sản phẩm */
+    margin-left: 5px; /* Khoảng cách giữa giá sản phẩm và thông tin giảm giá */
+	
+}
+
 /* Header */
 .header{background-color:#ffffff;}
 .header-top{color:#fff;background:#14b0bc;padding:7px 0px;}
@@ -319,7 +326,7 @@ img:not([src]){visibility:hidden;}
 .box-product .images img,.pic-product img{width:100%;/* border-radius:3px; */}
 .box-product .images .img_hover{position:absolute;left:0;top:0;z-index:-1;opacity:0;transition:all 0.5s;}
 .box-product .images:hover .img_hover{z-index:2;opacity:1;}
-.box-product .name,.name-product{font:15px/1.4 svnpp;-webkit-line-clamp:2;margin:0 0 5px 0;color:#7d3b06;/* font-weight: bold; */}
+.box-product .name,.name-product{font:15px/1.4 svnpp;color:#7d3b06;}
 .box-product .name:hover{font: 600 15px/1.4 svnpp;}
 .price-product{margin-bottom:0px;align-items:center;/* justify-content: center; *//* height: 50px; */width:100%;}
 .box-product .button{padding:10px 20px;margin:0;font-size:13px;background:-moz-linear-gradient(90deg,#D9040F 0,#980008 100%);background:-webkit-gradient(linear,90deg,color-stop(0,D9040F),color-stop(100%,980008));background:-webkit-linear-gradient(90deg,#D9040F 0,#980008 100%);background:-o-linear-gradient(90deg,#D9040F 0,#980008 100%);background:-ms-linear-gradient(90deg,#D9040F 0,#980008 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE',endColorstr='#F4F60C',GradientType='1');background:linear-gradient(90deg,#D9040F 0,#980008 100%);}
