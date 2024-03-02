@@ -98,7 +98,12 @@ img.lazy{opacity:0;}
 img:not(.initial){transition:opacity 1s;}
 img.initial,img.loaded,img.error{opacity:1;}
 img:not([src]){visibility:hidden;}
-
+/*Hiện sẵn chữ giảm giá */
+.discount {
+    display: inline-block; /* Hiển thị dính liền với giá sản phẩm */
+    margin-left: 5px; /* Khoảng cách giữa giá sản phẩm và thông tin giảm giá */
+	
+}
 /* Header */
 .header{background-color:#ffffff;}
 .header-top{color:#fff;background:#14b0bc;padding:7px 0px;}
@@ -317,7 +322,23 @@ img:not([src]){visibility:hidden;}
 .product:nth-child(4n+1){clear:both;}
 .product:nth-child(4n){margin-right:0px;}
 .box-product{position:relative;display:block;margin:14px 0;/* text-align: center; *//* padding: 10px; */background:#fdfcfb;border-radius:0;-ms-filter:"progid:DXImageTransform.Microsoft.Shadow(Strength=5,Direction=0,Color=#000000)";-moz-box-shadow:0 0 5px rgba(0,0,0,0.05);-webkit-box-shadow:0 0 5px rgb(0 0 0 / 5%);box-shadow:0 0 5px rgb(0 0 0 / 5%);filter:progid:DXImageTransform.Microsoft.Shadow(Strength=5,Direction=135,Color=#000000);}
-.box-product .info{display:flex;height:120px;flex-wrap:wrap;/* justify-content: center; */align-items:center;padding:15px;}
+.box-product .info {
+    display: flex;
+    height: 156px; /* Chiều cao mặc định */
+    flex-wrap: wrap;
+    align-items: center;
+    padding: -4px; /* Điều chỉnh padding nếu cần thiết */
+}
+
+/* Media query cho thiết bị di động */
+@media only screen 
+  and (device-width: 375px) 
+  and (device-height: 812px) 
+  and (-webkit-device-pixel-ratio: 3) { /* Điều kiện cho iPhone XS */
+    .box-product .info {
+        height: 156px; /* Đặt chiều cao mặc định */
+    }
+}
 .pic-product,.box-product .images{background:#ffffff;position:relative;/* border: 1px solid #efefef; *//* margin: 0 0 15px 0; */}
 .box-product .images img,.pic-product img{width:100%;/* border-radius:3px; */}
 .box-product .images .img_hover{position:absolute;left:0;top:0;z-index:-1;opacity:0;transition:all 0.5s;}
@@ -329,7 +350,7 @@ img:not([src]){visibility:hidden;}
 .box-product .button:hover{/* color: #ff0; */background:#3b51a1;}
 .price-product span{/* font-weight:700; */}
 .price-new{font:17px/22px svnpp;margin:0 10px 0 0;color:#7d3b06;}
-.price-new span,.price-old span{text-decoration:underline;position:relative;font-size:80%;top:-0.2em;}
+.price-new span,.price-old span{text-decoration:underline;position:relative;font-size:70%;top:-0.2em;}
 .price-old{margin:0 5px;text-decoration:line-through;color:#8e8682;margin:0  10px 0 0;font:15px/22px svnpp;}
 .price-per{position:absolute;top:15px;left:15px;color:#ffffff;background:#bc6d18;font-size:12px;border-radius:50%;width:40px;height:40px;text-align:center;line-height:40px;}
 .box-product .cart-product{margin-bottom:0px;position:absolute;bottom:12px;left:12px;right:12px;display:none;}
