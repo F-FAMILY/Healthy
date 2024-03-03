@@ -324,7 +324,7 @@ img:not([src]){visibility:hidden;}
 .box-product{position:relative;display:block;margin:14px 0;/* text-align: center; *//* padding: 10px; */background:#fdfcfb;border-radius:0;-ms-filter:"progid:DXImageTransform.Microsoft.Shadow(Strength=5,Direction=0,Color=#000000)";-moz-box-shadow:0 0 5px rgba(0,0,0,0.05);-webkit-box-shadow:0 0 5px rgb(0 0 0 / 5%);box-shadow:0 0 5px rgb(0 0 0 / 5%);filter:progid:DXImageTransform.Microsoft.Shadow(Strength=5,Direction=135,Color=#000000);}
 .box-product .info {
     display: flex;
-    height: 156px; /* Chiều cao mặc định */
+    height: 126px; /* Chiều cao mặc định */
     flex-wrap: wrap;
     align-items: center;
     padding: -4px; /* Điều chỉnh padding nếu cần thiết */
