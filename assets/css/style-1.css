@@ -725,7 +725,14 @@ coccocgrammar{display:none;}
 }
 
 /* Responsive */
+@media only screen and (max-width: 768px) {
+	/* Điều chỉnh text-align thành left (trái) cho các thiết bị có độ rộng màn hình tối đa là 768px */
+	table td p {
+	  text-align: left !important;
+	}
+  }
 @media(max-width:991px){
+	
 	.menu,.header .hotline-header,.header-top .info-header,.banner-right,.user-header,.header-bottom .search,.hide_mb{display:none;}
 	.cart-banner{font-size:0;width:24px;min-width:24px;}
 	.header-top > .flex{flex-flow:row-reverse;}
@@ -748,7 +755,11 @@ coccocgrammar{display:none;}
 	.slick_pad_15,.slick_pad_12{margin:0 -10px;}
 	.slick_pad_15 .slick-slide,.slick_pad_12 .slick-slide{padding:0 10px;}
 	.slideshow-item .info{zoom:0.8;}
+	table td p {
+		text-align: left !important;
+	  }
 }
+
 @media(max-width:767px){
 	.news-image{margin-bottom:1rem;}
 	.col_3 > div{width:calc(50% - 20px);}
@@ -764,6 +775,10 @@ coccocgrammar{display:none;}
 	#popup .modal-content .info .cont,#popup .modal-content .info .title-main{display:none;}
 	.box-news .info{padding:20px 30px;}
 	.slideshow-item .info{zoom:0.7;}
+	table td p {
+		text-align: left !important;
+	  }
+	
 }
 @media(max-width:679px){
 	.title-main .name{font-size:30px;}
@@ -771,6 +786,9 @@ coccocgrammar{display:none;}
 	.ft-1,.ft-2,.ft-3,.ft-4{width:100%;}
 	.grid_sp{grid-gap:15px;padding:15px;}
 	.slideshow-item .info{zoom:0.6;}
+	table td p {
+		text-align: left !important;
+	  }
 }
 @media(max-width:579px){
 	.col_3 > div{width:calc(100% - 20px);}
